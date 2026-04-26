@@ -1,0 +1,30 @@
+{
+  "name": "outreach-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Outreach — prospects, sequences, accounts, tasks, and sales engagement via the Model Context Protocol",
+  "type": "module",
+  "bin": {
+    "outreach-mcp-server": "dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["mcp", "outreach", "sales-engagement", "sequences", "crm", "mcp-server", "prospecting"],
+  "author": "Zach Leventer",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
