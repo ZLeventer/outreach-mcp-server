@@ -6,14 +6,25 @@
   "bin": {
     "outreach-mcp-server": "dist/index.js"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsc --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
   },
-  "keywords": ["mcp", "outreach", "sales-engagement", "sequences", "crm", "mcp-server", "prospecting"],
+  "keywords": [
+    "mcp",
+    "outreach",
+    "sales-engagement",
+    "sequences",
+    "crm",
+    "mcp-server",
+    "prospecting"
+  ],
   "author": "Zach Leventer",
   "license": "MIT",
   "dependencies": {
@@ -22,6 +33,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
+    "husky": "^9.1.7",
     "typescript": "^5.7.2"
   },
   "engines": {
